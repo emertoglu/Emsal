@@ -42,7 +42,8 @@ class MainWindow(QWidget):
         exit
     def yeni_emsal(self):
         self.hide()
-        QTimer.singleShot(1000, self.emsal_al)
+        sure = 1000
+        QTimer.singleShot(sure, self.emsal_al)
 
     def emsal_al(self):
         self.preview_screen = QApplication.primaryScreen().grabWindow(0)
